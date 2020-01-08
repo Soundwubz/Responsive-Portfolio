@@ -1,0 +1,233 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p, a, li {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding-bottom: 150px;
+    position: relative;
+    height: 100%;
+    background: url('../images/chevron.png');
+}
+
+header {
+    width: 100%;
+    /* padding: 10px;   */
+}
+
+#head-content {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+}
+
+#head-content h1 {
+    margin: 0;
+    display: inline;
+    color: white;
+    background: #4aaaa5;
+    padding: 20px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding: 0;
+    margin: 12px 0px 12px 0px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding-right: 30px;
+}
+
+.content {
+    background: #fff;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 930px;
+    padding: 20px 30px 20px 30px;
+}
+
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    background: url('../images/profile.jpeg');
+    background-position: 352px 436px;
+    background-size: 450px 450px;
+    float: left;
+    margin-right: 20px;
+}
+
+.about-cont p {
+    line-height: 30px;;
+}
+
+.port-collection {
+    width: 60%;
+    margin-left: 30px;
+}
+
+.port-item {
+    height: 200px;
+    width: 250px;
+    background: url('https://i.pinimg.com/originals/f6/d6/90/f6d690f040d65e5feb2081fcbebff8f8.jpg');
+    background-size: cover;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+.port-item p {
+    position: absolute;
+    background: #4aaaa5;
+    padding: 10px 0px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    position: relative;
+    width: 100%;
+}
+
+.contact-form input {
+    padding: 10px;
+    padding-right: 0px;
+    width: 920px;
+}
+
+.contact-form textarea {
+    width: 930px;
+    height: 200px;
+}
+
+#submit {
+    background: #4aaaa5;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+footer{
+    background: #666666;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    color: grey;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+    #head-content{
+        width: 100%;
+        padding-left: 50px;
+    }
+    #head-content h1 {
+        font-size: 1rem;
+    }
+    #head-content nav {
+        float: right;
+    }
+    #head-content nav ul {
+        font-size: .75rem;
+        margin-top: 5px;
+        padding-right: 50px;
+    }
+    .content{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .port-collection{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #head-content{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #head-content h1 {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+    #head-content nav {
+        float: right;
+    }
+    #head-content nav ul {
+        font-size: .75rem;
+        margin-top: 5px;
+    }
+    .content{
+        width: 87%;
+        margin-left: 15px;
+    }
+    .port-collection{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px) {
+    #head-content{
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    #head-content h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        display: block;
+        margin: 0;
+    }
+    #head-content nav {
+        /* float: right; */
+        width: 100%;
+        text-align: center;
+    }
+    #head-content nav ul {
+        font-size: .75rem;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    #head-content nav ul li{
+        padding: 0px 20px;
+    }
+    .content {
+        margin-top: 200px
+    }
+}
